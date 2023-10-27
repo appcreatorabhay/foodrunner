@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.anujandankit.abhayfoodrunner">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="AllowBackup">
+        <activity
+            android:name="com.anujandankit.abhayfoodrunner.activity.CartActivity"
+            android:label="My Cart" />
+        <activity
+            android:name="com.anujandankit.abhayfoodrunner.activity.DescriptionActivity"
+            android:parentActivityName="com.anujandankit.abhayfoodrunner.activity.MainActivity" />
+        <activity
+            android:name="com.anujandankit.abhayfoodrunner.activity.ResetActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.anujandankit.abhayfoodrunner.activity.ForgotActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.anujandankit.abhayfoodrunner.activity.RegisterActivity"
+            android:label="Register Yourself"
+            android:parentActivityName="com.anujandankit.abhayfoodrunner.activity.LoginActivity" />
+        <activity
+            android:name="com.anujandankit.abhayfoodrunner.activity.LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.anujandankit.abhayfoodrunner.activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar.Main" />
+        <activity
+            android:name="com.anujandankit.abhayfoodrunner.activity.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
